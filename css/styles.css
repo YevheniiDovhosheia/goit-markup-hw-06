@@ -204,6 +204,10 @@ img {
 .footer-input-wrap {
   margin-left: auto;
 }
+.input-wrap-foot {
+  display: flex;
+  gap: 24px;
+}
 .footer-input-text {
   font-weight: 500;
   color: var(--background);
@@ -321,7 +325,8 @@ img {
   outline: transparent;
   background-color: transparent;
   font-size: 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-label-text {
   display: block;
@@ -333,8 +338,6 @@ img {
 }
 .input-wrap {
   position: relative;
-  display: flex;
-  gap: 24px;
 }
 .modal-input-icon {
   position: absolute;
@@ -433,6 +436,10 @@ img {
   background-color: var(--logo-bac);
   border: none;
   fill: var(--background);
+}
+.modal-check:hover + .check-text span,
+.modal-check:focus + .check-text span {
+  border-color: var(--logo-bac);
 }
 
 .hero {
